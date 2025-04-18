@@ -26,7 +26,16 @@ python main.py
 
 ### Diagrama UML
 ```
-[Usuário] → [ChatbotFrontend] → [DeepInfra API] → [ChatbotFrontend] → [Usuário]
+sequenceDiagram
+    participant U as Usuário
+    participant F as ChatbotFrontend
+    participant API as DeepInfra API
+
+    U->>F: Faz pergunta
+    F->>API: Envia pergunta
+    API-->>F: Retorna resposta
+    F-->>U: Exibe resposta
+
 ```
 
 ---
