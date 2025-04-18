@@ -25,6 +25,7 @@ python main.py
 ```
 
 ### Diagrama UML
+```mermaid
 sequenceDiagram
     participant U as Usuário
     participant F as ChatbotFrontend
@@ -33,5 +34,4 @@ sequenceDiagram
     F->>API: Envia pergunta
     API-->>F: Retorna resposta
     F-->>U: Exibe resposta
-
----
+```
