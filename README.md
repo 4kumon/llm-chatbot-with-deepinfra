@@ -2,9 +2,11 @@
 ### Estrutura
 ```
 llm-chatbot-with-deepinfra/
+├── chatbot.py
+├── config.py
 ├── main.py
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .env
 ```
 
 ### Instalação
@@ -14,10 +16,12 @@ cd llm-chatbot-with-deepinfra
 pip install -r requirements.txt
 ```
 
-Substitua sua chave de API no `main.py`:
-```python
-DEEPINFRA_API_KEY = 'your-deepinfra-api-key'
+### Configuração
+Crie um arquivo .env para armazenar sua chave de API da DeepInfra:
 ```
+DEEPINFRA_API_KEY=your-deepinfra-api-key
+```
+
 
 ### Uso
 ```bash
