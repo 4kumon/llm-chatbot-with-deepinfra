@@ -1,7 +1,7 @@
 
 ### Estrutura
 ```
-llm-chatbot-with-deepinfra/
+ollama-chatbot-cli/
 ├── chatbot.py
 ├── config.py
 ├── main.py
@@ -11,8 +11,8 @@ llm-chatbot-with-deepinfra/
 
 ### Instalação
 ```bash
-git clone https://github.com/seu-repo/llm-chatbot-with-deepinfra.git
-cd llm-chatbot-with-deepinfra
+git clone https://github.com/seu-repo/ollama-chatbot-cli.git
+cd ollama-chatbot-cli
 pip install -r requirements.txt
 ```
 
