@@ -7,7 +7,7 @@ Por ser modular, o chatbot pode ser expandido com:
 - Interface web com Flask ou Streamlit
 - Integração com bancos de dados
 - Suporte a múltiplos modelos
-- É ideal para quem deseja estudar o funcionamento de LLMs locais, criar protótipos rápidos, ou garantir mais controle e privacidade na execução de modelos de linguagem.
+- É ideal para quem deseja estudar o funcionamento de LLMs locais, criar protótipos de AI LLM rápidos, ou garantir mais controle e privacidade na execução de modelos de linguagem.
 
 ### Tecnologias
 - 🧠 Ollama – para execução local do modelo de AI LLM gemma3:1b (um SLM poderoso)
