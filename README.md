@@ -32,10 +32,11 @@ python main.py
 ```mermaid
 sequenceDiagram
     participant U as Usuário
-    participant F as ChatbotFrontend
-    participant API as DeepInfra API
-    U->>F: Faz pergunta
-    F->>API: Envia pergunta
-    API-->>F: Retorna resposta
-    F-->>U: Exibe resposta
+    participant CLI as Chatbot (Terminal)
+    participant Ollama as Modelo Local (llama3)
+
+    U->>CLI: Digita uma pergunta
+    CLI->>Ollama: Envia prompt para geração
+    Ollama-->>CLI: Retorna resposta
+    CLI-->>U: Mostra resposta
 ```
