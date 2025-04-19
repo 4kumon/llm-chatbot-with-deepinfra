@@ -10,9 +10,9 @@ Por ser modular, o chatbot pode ser expandido com:
 - É ideal para quem deseja estudar o funcionamento de LLMs locais, criar protótipos rápidos, ou garantir mais controle e privacidade na execução de modelos de linguagem.
 
 ### Tecnologias
-🧠 Ollama – para execução local do modelo de AI LLM gemma3:1b (um SLM poderoso)
-🐍 Python 3.8+
-📦 requests – biblioteca Python para comunicação com o servidor local do Ollama
+- 🧠 Ollama – para execução local do modelo de AI LLM gemma3:1b (um SLM poderoso)
+- 🐍 Python 3.8+
+- 📦 requests – biblioteca Python para comunicação com o servidor local do Ollama
 
 ### Estrutura
 ```
