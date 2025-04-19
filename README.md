@@ -25,6 +25,7 @@ ollama-chatbot-cli/
 ```
 
 ### Instalação
+Clone este repositório e instale as dependências usadas no Python:
 ```bash
 git clone https://github.com/4kumon/ollama-chatbot-cli.git
 cd ollama-chatbot-cli
@@ -33,8 +34,9 @@ pip install -r requirements.txt
 
 [Clique aqui para baixar](https://ollama.com/download) e instalar o Ollama para seu sistema operacional
 
-Carregue o modelo ```gemma3:1b```
-```ollama run gemma3:1b```
+Carregue o modelo ```gemma3:1b```:
+
+    ollama run gemma3:1b
 
 Isso iniciará um servidor local em ```http://localhost:11434```.
 
