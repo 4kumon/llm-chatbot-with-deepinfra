@@ -11,7 +11,7 @@ ollama-chatbot-cli/
 
 ### Instalação
 ```bash
-git clone https://github.com/seu-repo/ollama-chatbot-cli.git
+git clone https://github.com/4kumon/ollama-chatbot-cli.git
 cd ollama-chatbot-cli
 pip install -r requirements.txt
 ```
