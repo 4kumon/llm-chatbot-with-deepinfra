@@ -1,5 +1,5 @@
 import requests
-import sys
+import json
 
 class Chatbot:
     def __init__(self, model="gemma3:1b", endpoint="http://localhost:11434/api/generate"):
@@ -14,15 +14,16 @@ class Chatbot:
         }, stream=True)
 
         print("Chatbot: ", end="", flush=True)
+
         for line in response.iter_lines():
             if line:
-                data = line.decode("utf-8").replace("data: ", "")
                 try:
-                    content = eval(data).get("response", "")
-                    print(content, end="", flush=True)
-                except Exception:
-                    pass
-        print()  # nova linha após resposta completa
+                    data = json.loads(line.decode("utf-8").removeprefix("data: "))
+                    token = data.get("response", "")
+                    print(token, end="", flush=True)
+                except Exception as e:
+                    continue
+        print()  # nova linha ao final da resposta
 
     def run(self):
         print("Digite sua pergunta (ou 'sair' para encerrar):")
